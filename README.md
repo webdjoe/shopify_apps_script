@@ -4,6 +4,8 @@ Shopify's rest API makes it difficult to regularly track and analyze data withou
 
 This is a Google Apps Script that does the heavy lifting to pull data from the shopify Orders API and tabulate in easily accessible google sheets. There is a 5 million cell maximum on google sheets which roughly translates to 100k orders with the default columns. If you have over 100k orders to analyze, this isn't the best solution. This Docker based SQL Server solution may be more appropriate - [pyshopify](https://github.com/webdjoe/pyshopify) 
 
+Here is an [example](https://docs.google.com/spreadsheets/d/1MhDz8uO-juhyMLFUi4jScBoNNfQtbkuquNkAaLqry1A/edit?usp=sharing), make a copy to use.
+
 ## Spreadsheet Structure
 
 The following sheets are required to pull data and the headers listed are the default headers. Any Order object key can be used as a header, the script will automatically pull and load the data based on the column headers. The full Shopify Orders object/keys can be found [here](https://shopify.dev/api/admin-rest/2022-04/resources/order#resource-object) 
