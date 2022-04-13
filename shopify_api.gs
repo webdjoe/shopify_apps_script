@@ -196,7 +196,6 @@ function parseLinkHeader(header) {
 
     var matches = header.match(linkexp);
     var rels = {};
-    for (i = 0; i < matches.length; i++) {
     for (let i = 0; i < matches.length; i++) {
         var split = matches[i].split('>');
         var href = split[0].substring(1);
